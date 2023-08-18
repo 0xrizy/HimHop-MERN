@@ -1,0 +1,74 @@
+/* src/components/Register.css */
+.reg{
+    color: rgb(10, 9, 9);
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 140px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg?w=1380&t=st=1692333706~exp=1692334306~hmac=b91cc02da429ddb027d7e42793449fba0b9d9c251ab2ca2469500eaf6b3ceb75');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6; /* Adjust the opacity as needed */
+    z-index: 0;
+    align-items: flex-start;
+  }
+  
+  .register-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: -1;
+    width: 500px; /* Adjust width as needed */
+    margin-top: 200px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: rgb(10, 9, 9);
+    font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .message {
+    margin-top: 1rem;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+  }

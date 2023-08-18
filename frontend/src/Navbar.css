@@ -1,0 +1,76 @@
+/* src/components/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* You can set a default font-family here */
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  background-color: #4d9249;
+  color: rgb(192, 5, 5);
+  margin: 0; /* Remove margin */
+  border-bottom: 1px solid #cd6060;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Pacifico', cursive; /* Apply Pacifico font */
+  padding:5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-button-navbar {
+  padding: 0.7rem 1.4rem;
+  margin-right: 20px;
+  background-color: #d6526a;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 1000px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.login-button-navbar:hover {
+  background-color: #0056b3;
+}
+
+.picksbtn{
+  margin-left: 0px;
+  padding: 0.7rem 1.4rem;
+  margin-right: 0px;
+  background-color: #d6526a;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 1000px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.explorebtn{
+  margin-right: 0px;
+  padding: 0.7rem 1.4rem;
+  margin-left: 1110px;
+  background-color: #d6526a;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 1000px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

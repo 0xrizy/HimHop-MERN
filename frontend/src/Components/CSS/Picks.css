@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg?w=1380&t=st=1692333706~exp=1692334306~hmac=b91cc02da429ddb027d7e42793449fba0b9d9c251ab2ca2469500eaf6b3ceb75');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.picks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e3e3e3;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit:cover;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.card h3 {
+  margin: 0;
+  color: #d4542d;
+  font-family: 'Pacifico', cursive;
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+  background-color: #3989df;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.hd1{
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  margin-top: 0;
+  margin-left: 790px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #e8490a;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+}

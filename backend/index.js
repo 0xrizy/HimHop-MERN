@@ -5,12 +5,14 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const UserDB = require('./Models/UserModel')
 const authMiddleware = require("./authMiddleware")
+require('dotenv').config();
+const mongoURI = process.env.MONGO_URI;
 
-
+const secret = process.env.SECRET;
 app.use(express.json());
 app.use(cors());
-const secretKey ="secr3t"
-const URI = "mongodb+srv://rizulthakur:passwordofrizul@cluster1.t7bdju3.mongodb.net/himhop1?retryWrites=true&w=majority"
+const secretKey =secret
+const URI = mongoURI
 
 mongoose
   .connect(URI)

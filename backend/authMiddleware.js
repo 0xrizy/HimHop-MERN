@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 
-const secretKey = "secr3t"; // Secret key for signing and verifying tokens
+const secret = process.env.SECRET;
+const secretKey = secret; // Secret key for signing and verifying tokens
 
 const authMiddleware = (req, res, next) => {
   const token = req.header("Authorization");

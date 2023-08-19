@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&display=swap');
 
 
-.background-image {
+/* .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -11,71 +11,93 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.6; /* Adjust the opacity as needed */
+    opacity: 0.6; 
     z-index: -1;
   }
+   */
+  /* Results.css */
+.results-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
   
-  .results-container {
-    display: flex; /* Use flexbox to make cards display side by side */
-    flex-wrap: wrap; /* Allow cards to wrap to a new line if necessary */
-    justify-content: center; /* Center the cards horizontally */
-    padding: 20px;
-  }
-  
-  .results-heading {
-    font-family: 'Pacifico', cursive;
-    font-size: 60px;
-    margin-top: 20px;
-    margin-left: 0px;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: #e8490a;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-  }
-  
-  .results-list {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Display the cards side by side */
-    flex-wrap: wrap; /* Allow cards to wrap to a new line if necessary */
-    justify-content: center; /* Center the cards horizontally */
-  }
-  
-  .result-card {
-    border: 1px solid #837272;
-    padding: 10px;
-    margin: 10px; /* Add margin between cards */
-    background-color: #ece8e8;
-    width: 300px; /* Set a fixed width for each card */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .result-name {
-    font-size: 25px;
-    margin-bottom: 5px;
-    font-family: 'Pacifico', cursive;
-    color: rgb(186, 7, 7);
-  }
-  
-  .result-full-name {
-    font-weight: bold;
-    font-family: cursive;
-  }
-  
-  .result-category {
-    margin-bottom: 5px;
-  }
-  
-  .result-address {
-    color: #555;
-  }
-  
-  /* Media query for responsive design */
-  @media screen and (max-width: 768px) {
-    .result-card {
-      width: 100%; /* Make cards take full width on smaller screens */
-      margin: 10px 0; /* Adjust margin for better spacing */
-      padding: 15px;
-    }
-  }
-  
+}
+
+
+
+.results-heading {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Pacifico';
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: rgb(231, 62, 62);
+}
+
+.results-list {
+  list-style:none;
+  padding: 0;
+}
+/* Style for the loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust the height as needed */
+  font-size: 40px;
+  color: #a32929;
+}
+
+
+.result-card {
+  background-color: #efecec;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(103, 99, 99, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.result-name {
+  margin-top: 0px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #5e5d5d;
+}
+
+.result-full-name {
+  font-size: 16px;
+  color: #4b4b4b;
+  margin-bottom: 5px;
+}
+
+.result-category {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.result-address {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button + button {
+  margin-left: 10px;
+}

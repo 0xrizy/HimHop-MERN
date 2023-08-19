@@ -157,3 +157,25 @@ mongoose
       res.status(500).json({ errorMessage: "Internal server error" });
     }
   });
+
+
+  app.get('/get-image', async (req, res) => {
+    try {
+      const detailName = req.query.detailName;
+      const apiKey = "ad6d9183e75dcd34708f49e0640bca70504109a19a488a7e850ab3ba76bd8107";
+      const response = await fetch(`https://serpapi.com/search.json?engine=google_images&q=${detailName}&location=Himachal+Pradesh,+India&hl=hi&gl=in&api_key=${apiKey}`);
+      console.log(response);
+      const data = await response.json();
+      console.log(data);
+      console.log(data.images_results[0].thumbnail);
+      if (data.images_results && data.images_results.length > 0) {
+        const imageUrl = data.images_results[0].thumbnail;
+        res.json({ imageUrl });
+      } else {
+        res.status(404).json({ error: 'Image not found' });
+      }
+    } catch (error) {
+      console.error('Error fetching image:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });

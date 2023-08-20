@@ -17,7 +17,7 @@ const YourPicks = () => {
 
         const response = await axios.get("https://himhop1.onrender.com/yourPicks", {
           headers: {
-            Authorization: token,
+            "Authorization": token,
           },
         });
 

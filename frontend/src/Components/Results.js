@@ -34,7 +34,7 @@ const Results = ({ selectedPlaceId, setDetailName }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: token,
+          "Authorization": token,
         },
         body: JSON.stringify(result),
       });

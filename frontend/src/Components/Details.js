@@ -9,7 +9,7 @@ function Details({ detailName }) {
   useEffect(() => {
     const fetchImage = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/get-image?detailName=${detailName}`);
+        const response = await fetch(`https://himhop1.onrender.com/get-image?detailName=${detailName}`);
         const data = await response.json();
         console.log(response);
         console.log("data below");

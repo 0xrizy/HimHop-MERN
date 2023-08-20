@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/Picks.css'; // Create this CSS file for styling
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const districts = [
@@ -14,7 +13,7 @@ const districts = [
   { name: 'Una', image: 'https://mediaim.expedia.com/destination/1/b8f60d4bdb145d490fc63e887f3207eb.jpg', place_id:"51b813364d69115340599c7d2fcf94773f40f00103f901401b818c00000000c00207920303556e61"},
 ];
 
-const Picks = ({selectedPlaceId={selectedPlaceId}, setSelectedPlaceId={setSelectedPlaceId}}) => {
+const Picks = ({setSelectedPlaceId}) => {
 
   
     const handleExploreClick = (placeId) => {

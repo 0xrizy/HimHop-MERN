@@ -9,12 +9,13 @@ const YourPicks = () => {
     const fetchData = async () => {
       try {
         const token = localStorage.getItem("token"); // Retrieve the user's token
+        console.log(token);
         if (!token) {
           console.error("User token not found.");
           return;
         }
 
-        const response = await axios.get("http://localhost:3001/yourPicks", {
+        const response = await axios.get("https://himhop1.onrender.com/yourPicks", {
           headers: {
             Authorization: token,
           },

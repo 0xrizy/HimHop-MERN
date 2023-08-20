@@ -30,7 +30,7 @@ const Results = ({ selectedPlaceId, setDetailName }) => {
         return;
       }
 
-      const response = await fetch("http://localhost:3001/saveToFavorites", {
+      const response = await fetch("https://himhop1.onrender.com/saveToFavorites", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

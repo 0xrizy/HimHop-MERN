@@ -164,8 +164,10 @@ mongoose
   app.get('/get-image', async (req, res) => {
     try {
       const detailName = req.query.detailName;
+      console.log(detailName);
       const apiKey = "ad6d9183e75dcd34708f49e0640bca70504109a19a488a7e850ab3ba76bd8107";
       const response = await fetch(`https://serpapi.com/search.json?engine=google_images&q=${detailName}&location=Himachal+Pradesh,+India&hl=hi&gl=in&api_key=${apiKey}`);
+      console.log("backend resp below");
       console.log(response);
       const data = await response.json();
       console.log(data);
@@ -181,3 +183,5 @@ mongoose
       res.status(500).json({ error: 'Internal server error' });
     }
   });
+  
+  //https://serpapi.com/search.json?engine=google_images&q=Kangra&location=Himachal+Pradesh,+India&hl=hi&gl=in&api_key=ad6d9183e75dcd34708f49e0640bca70504109a19a488a7e850ab3ba76bd8107

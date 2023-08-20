@@ -53,7 +53,7 @@ const Results = ({ selectedPlaceId, setDetailName }) => {
 
 
   //////////////////////////////////////////////////////////////////////
-  const handleClick=(name1)=>{
+  const handleClick= (name1)=>{
     setDetailName(name1)
   }
 
